@@ -1,0 +1,10 @@
+name: Python Sarah
+on: push
+jobs:
+    build-python:
+        runs-on: ubuntu-latest
+        container: python:3.12
+
+        steps:
+            - name: Run python --version
+              run: python --version
